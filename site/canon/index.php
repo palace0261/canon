@@ -118,7 +118,7 @@ $pdsList = array_filter($pdsAll, fn($it) => ($cat === '' || $it['cat'] === $cat)
     && ($q === '' || mb_stripos($it['title'], $q) !== false));
 
 $pages = [
-    'main'    => '홈',
+    'main'    => 'Home',
     'product' => '제품정보',
     'support' => '고객지원',
     'about'   => '회사소개',

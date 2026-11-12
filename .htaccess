@@ -1,14 +1,11 @@
 # Enable Rewrite Engine
 RewriteEngine On
-
-# Set the base directory
 RewriteBase /
 
-# Redirect root domain and /canon/index.php directly to site/canon/index.php
-RewriteRule ^(canon/)?index\.php$ site/canon/index.php [L,QSA]
-RewriteRule ^$ site/canon/index.php [L,QSA]
+# /canon/site/ 와 /site/ 경로는 그대로 둠
+RewriteCond %{REQUEST_URI} ^/canon/site/ [OR]
+RewriteCond %{REQUEST_URI} ^/site/
+RewriteRule ^ - [L]
 
-# Redirect all other requests to site/canon/index.php, except existing files/directories
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ site/canon/index.php [L,QSA]
+# 모든 다른 요청은 /site/canon/index.php?p=main으로 리다이렉트
+RewriteRule ^.*$ /site/canon/index.php?p=main [R=301,L]
