@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>PHP</title>
-  </head>
-  <body>
 <?php
-    echo phpinfo();   
+// Redirect to site/canon/index.php
+header('Location: /site/canon/index.php', true, 301);
+exit;
 ?>
-  </body>
-</html>

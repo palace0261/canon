@@ -4,12 +4,11 @@ RewriteEngine On
 # Set the base directory
 RewriteBase /
 
-# Redirect all requests to site/canon/index.php, except existing files/directories
+# Redirect root domain and /canon/index.php directly to site/canon/index.php
+RewriteRule ^(canon/)?index\.php$ site/canon/index.php [L,QSA]
+RewriteRule ^$ site/canon/index.php [L,QSA]
+
+# Redirect all other requests to site/canon/index.php, except existing files/directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ site/canon/index.php [L,QSA]
-
-# Remove index.php from URL if accessed directly
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^index\.php$ site/canon/index.php [L,QSA]
