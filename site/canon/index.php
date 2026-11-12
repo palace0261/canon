@@ -794,6 +794,37 @@ $captchaLabel = fn(string $text) => '<label style="display:block;margin:10px 0 4
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Canon PTZ 공식 리셀러 | 소다미디어</title>
 
+<!-- SEO Meta Tags -->
+<meta name="description" content="Canon PTZ 카메라 공식 리셀러 소다미디어. CR-N100, N300, N500, N700 등 고품질 PTZ 카메라 판매 및 기술 지원 서비스를 제공합니다.">
+<meta name="keywords" content="Canon PTZ, Canon PTZ 카메라, PTZ 카메라, 원격 카메라, 영상 회의 카메라, CR-N100, CR-N300, CR-N500, CR-N700, RC-IP100, RC-IP1000">
+<meta name="author" content="소다미디어">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="bingbot" content="index, follow">
+<meta name="naver-site-verification" content="">
+<meta name="google-site-verification" content="">
+
+<!-- Open Graph Meta Tags for Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Canon PTZ 공식 리셀러 | 소다미디어">
+<meta property="og:description" content="Canon PTZ 카메라 공식 리셀러 소다미디어. 고품질 PTZ 카메라 및 액세서리 판매, 기술 지원 서비스 제공">
+<meta property="og:url" content="<?= isset($_SERVER['HTTP_HOST']) ? 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] : 'https://canon.sodamedia.kr' ?>">
+<meta property="og:image" content="<?= isset($_SERVER['HTTP_HOST']) ? 'https://' . $_SERVER['HTTP_HOST'] : 'https://canon.sodamedia.kr' ?>/site/a-cn-img/logo.png">
+<meta property="og:site_name" content="소다미디어 Canon PTZ 공식 리셀러">
+<meta property="og:locale" content="ko_KR">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Canon PTZ 공식 리셀러 | 소다미디어">
+<meta name="twitter:description" content="Canon PTZ 카메라 공식 리셀러 소다미디어. 고품질 PTZ 카메라 및 액세서리 판매, 기술 지원 서비스 제공">
+<meta name="twitter:image" content="<?= isset($_SERVER['HTTP_HOST']) ? 'https://' . $_SERVER['HTTP_HOST'] : 'https://canon.sodamedia.kr' ?>/site/a-cn-img/logo.png">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="<?= isset($_SERVER['HTTP_HOST']) ? 'https://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['REQUEST_URI']) . '/' : 'https://canon.sodamedia.kr/' ?>">
+
+<!-- Link Tags for Alternate Languages (if needed) -->
+<link rel="alternate" hreflang="ko" href="<?= isset($_SERVER['HTTP_HOST']) ? 'https://' . $_SERVER['HTTP_HOST'] : 'https://canon.sodamedia.kr' ?>">
+
 <link rel="icon" href="../a-cn-img/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="../a-cn-img/favicon.ico">
 <link rel="mask-icon" href="../a-cn-img/favicon.ico" color="#000000">
