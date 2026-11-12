@@ -2,9 +2,9 @@
 RewriteEngine On
 RewriteBase /
 
-# /canon/site/ 와 /site/ 경로는 그대로 둠
-RewriteCond %{REQUEST_URI} ^/canon/site/ [OR]
-RewriteCond %{REQUEST_URI} ^/site/
+# 실제 존재하는 파일/디렉토리만 그대로 둠
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
 # 모든 다른 요청은 /site/canon/index.php?p=main으로 리다이렉트
